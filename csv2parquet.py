@@ -3,6 +3,7 @@ import pyarrow as pa
 import pyarrow.parquet as pq
 import pyarrow.csv as pc
 
+
 def convert_csv_to_parquet(in_path, out_path, delimiter='\t'):
     options = pc.ReadOptions()
     options.use_threads = True
@@ -20,6 +21,7 @@ def convert_csv_to_parquet(in_path, out_path, delimiter='\t'):
             writer.write_table(next_table)
     writer.close()
 
+
 def main():
     parser = argparse.ArgumentParser(description='Convert CSV to Parquet')
     parser.add_argument('input', help='Input CSV file path')
@@ -33,3 +35,5 @@ def main():
 
 if __name__ == '__main__':
     main()
+
+# todo: add IPC format
