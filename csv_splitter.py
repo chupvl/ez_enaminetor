@@ -32,3 +32,4 @@ def parse_arguments():
 if __name__ == '__main__':
     input_file, chunk_size, name_pattern = parse_arguments()
     main(input_file, chunk_size, name_pattern)
+
