@@ -1,4 +1,8 @@
-import csv2parquet
-import csv2parquet_withProps
-import csv_splitter
-import parquet2csv_chunks
+"""
+Collection of modules for working with Enamine REAL files
+"""
+__version__ = '0.0.1'
+__author__ = 'Vladimir Chupakhin'
+__email__ = 'chupvl@gmail.com'
+__status__ = 'Development'
+__date__ = '2023-06-22'
