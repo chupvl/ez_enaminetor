@@ -6,7 +6,7 @@ def write_chunk(part, lines, name_pattern, header):
         f_out.write(header)
         f_out.writelines(lines)
 
-def main(input_file, chunk_size, name_pattern):
+def process_file(input_file, chunk_size, name_pattern):
     with open(input_file, 'r') as f:
         count = 0
         header = f.readline()
@@ -31,5 +31,5 @@ def parse_arguments():
 
 if __name__ == '__main__':
     input_file, chunk_size, name_pattern = parse_arguments()
-    main(input_file, chunk_size, name_pattern)
+    process_file(input_file, chunk_size, name_pattern)
 
